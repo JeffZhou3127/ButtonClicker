@@ -1,0 +1,39 @@
+:root {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #29253d;
+  background: #f6f3ee;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 280px;
+}
+
+#root {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:focus-visible {
+  outline: 3px solid #6350bf;
+  outline-offset: 6px;
+}
+
+button:disabled {
+  cursor: default;
+}

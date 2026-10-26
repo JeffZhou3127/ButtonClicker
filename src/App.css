@@ -1,0 +1,112 @@
+.clicker {
+  width: 100%;
+  max-width: 480px;
+  padding: 48px 24px 32px;
+  border: 1px solid #e4ded7;
+  border-radius: 28px;
+  background: #fffdf9;
+  text-align: center;
+  box-shadow: 0 16px 48px #29253d08;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #71618e;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(28px, 7vw, 38px);
+  letter-spacing: -1.5px;
+}
+
+.description {
+  margin: 0;
+  color: #78737e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.score {
+  display: grid;
+  gap: 2px;
+  margin: 32px 0;
+}
+
+.score-number {
+  overflow-wrap: anywhere;
+  font-size: 72px;
+  font-weight: 750;
+  letter-spacing: -3px;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+.score-label {
+  color: #87808f;
+  font-size: 14px;
+}
+
+.click-button {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  padding: 25px 16px;
+  border: 2px solid #33264e;
+  border-radius: 18px;
+  background: #c5b1f0;
+  color: #2e2148;
+  box-shadow: 0 7px 0 #33264e;
+  font-size: 26px;
+  font-weight: 750;
+  transition: background 120ms, transform 120ms, box-shadow 120ms;
+  user-select: none;
+}
+
+.click-button:hover {
+  background: #d2c0f8;
+}
+
+.click-button:active {
+  transform: translateY(6px);
+  box-shadow: 0 1px 0 #33264e;
+}
+
+.click-reward {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.reset-button {
+  margin-top: 28px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #716779;
+  font-size: 13px;
+}
+
+.reset-button:hover:enabled {
+  background: #f0eaf8;
+  color: #33264e;
+}
+
+.reset-button:disabled {
+  opacity: 0.45;
+}
+
+.hint {
+  margin: 24px 0 0;
+  font-size: 11px;
+  color: #938b99;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .click-button {
+    transition: none;
+  }
+}
